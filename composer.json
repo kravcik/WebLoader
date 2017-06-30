@@ -1,6 +1,6 @@
 {
-	"name": "janmarek/webloader",
-	"description": "Tool for loading or deploying CSS and JS files into web pages",
+	"name": "kravcik/webloader",
+	"description": "Fork",
 	"keywords": ["webloader", "css", "javascript", "assets", "nette"],
 	"homepage": "http://addons.nette.org/cs/webloader",
 	"license": "MIT",
