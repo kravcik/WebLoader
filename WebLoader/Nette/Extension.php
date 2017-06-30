@@ -68,6 +68,12 @@ class Extension extends CompilerExtension
 		$builder = $this->getContainerBuilder();
 		$config = $this->getConfig($this->getDefaultConfig());
 
+		/**
+                 * Allow read webloader setting from another extensions
+                 */
+                $config['css'] = $this->compiler->getConfig()['webloader']['css'];
+                $config['js'] = $this->compiler->getConfig()['webloader']['js'];
+		
 		$builder->addDefinition($this->prefix('cssNamingConvention'))
 			->setFactory('WebLoader\DefaultOutputNamingConvention::createCssConvention');
 
